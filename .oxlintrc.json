@@ -1,0 +1,33 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": ["typescript", "unicorn", "import", "oxc"],
+	"categories": { "correctness": "error" },
+	"rules": {
+		"eslint/curly": "error",
+		"eslint/no-extra-boolean-cast": "error",
+		"eslint/no-nested-ternary": "error",
+		"eslint/no-restricted-imports": ["error", { "patterns": ["../../**"] }],
+		"import/no-default-export": "error",
+		"oxc/no-barrel-file": "error",
+		"typescript/array-type": ["error", { "default": "array" }],
+		"typescript/consistent-type-assertions": ["error", { "assertionStyle": "never" }],
+		"typescript/consistent-type-definitions": ["error", "interface"],
+		"typescript/no-explicit-any": "error",
+		"unicorn/no-useless-undefined": "error",
+		"unicorn/prefer-at": "error",
+		"juicerq/no-conditional-let": "error",
+		"juicerq/no-ternary-return": "error",
+		"juicerq/no-trivial-call-wrapper": "error"
+	},
+	"jsPlugins": ["./dist/plugin.js"],
+	"ignorePatterns": [
+		"**/dist/**",
+		"**/node_modules/**",
+		"**/build/**",
+		"**/out/**",
+		"**/.next/**",
+		"**/*.config.*",
+		"**/*.gen.ts",
+		"**/*.d.ts"
+	]
+}
