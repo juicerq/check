@@ -1,5 +1,5 @@
 {
-	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
 	"plugins": ["typescript", "unicorn", "import", "oxc"],
 	"categories": { "correctness": "error" },
 	"rules": {
@@ -13,6 +13,10 @@
 		"typescript/consistent-type-assertions": ["error", { "assertionStyle": "never" }],
 		"typescript/consistent-type-definitions": ["error", "interface"],
 		"typescript/no-explicit-any": "error",
+		"typescript/no-floating-promises": "error",
+		"typescript/no-misused-promises": "error",
+		"typescript/no-non-null-assertion": "error",
+		"typescript/prefer-optional-chain": "error",
 		"unicorn/no-useless-undefined": "error",
 		"unicorn/prefer-at": "error",
 		"juicerq/no-conditional-let": "error",
