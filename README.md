@@ -61,7 +61,11 @@ Knip reads the project's own `knip.json` when there is one, and its defaults oth
 
 ## Rules
 
-Beyond the oxlint `correctness` set, the shared config turns on three rules from this package:
+Beyond the oxlint `correctness` set, the shared config caps cyclomatic complexity at 20 (`eslint/complexity`). The count charges `?.` and `??` a branch each, so a tighter ceiling would fight `typescript/prefer-optional-chain`, which this config also turns on. At 20 the rule stays quiet through ordinary branching: across six repositories and roughly 640 files it named fifteen functions, the worst of them at 42.
+
+Read a hit as a pointer to open the file, not as a number to bring down. The count cannot tell a good extraction from a bad one, and a rewrite that scores lower is not automatically the better one.
+
+It also turns on three rules from this package:
 
 - **`juicerq/no-conditional-let`** — an empty `let` filled by a following `if`, `switch`, or ternary. [Docs](https://github.com/juicerq/agent-setup/blob/main/check/src/rules/no-conditional-let/docs.md)
 - **`juicerq/no-ternary-return`** — a `return` whose whole argument is a ternary. [Docs](https://github.com/juicerq/agent-setup/blob/main/check/src/rules/no-ternary-return/docs.md)
