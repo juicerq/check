@@ -1,18 +1,18 @@
 {
 	"name": "@juicerq/check",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Lint rules, shared config, and check runner for juicerq's code standard",
 	"author": "juicerq",
 	"license": "MIT",
 	"homepage": "https://github.com/juicerq/agent-setup/tree/main/check",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/juicerq/agent-setup.git",
+		"url": "git+https://github.com/juicerq/agent-setup.git",
 		"directory": "check"
 	},
 	"type": "module",
 	"bin": {
-		"juicerq-check": "./dist/bin/check.js"
+		"juicerq-check": "dist/bin/check.js"
 	},
 	"files": [
 		"dist",

@@ -3,7 +3,7 @@
 	"plugins": ["typescript", "unicorn", "import", "oxc"],
 	"categories": { "correctness": "error" },
 	"rules": {
-		"eslint/complexity": ["error", { "max": 20 }],
+		"eslint/complexity": ["error", { "max": 15 }],
 		"eslint/curly": "error",
 		"eslint/no-extra-boolean-cast": "error",
 		"eslint/no-nested-ternary": "error",

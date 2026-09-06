@@ -61,7 +61,7 @@ Knip reads the project's own `knip.json` when there is one, and its defaults oth
 
 ## Rules
 
-Beyond the oxlint `correctness` set, the shared config caps cyclomatic complexity at 20 (`eslint/complexity`). The count charges `?.` and `??` a branch each, so a tighter ceiling would fight `typescript/prefer-optional-chain`, which this config also turns on. At 20 the rule stays quiet through ordinary branching: across six repositories and roughly 640 files it named fifteen functions, the worst of them at 42.
+Beyond the oxlint `correctness` set, the shared config caps cyclomatic complexity at 15 (`eslint/complexity`). The count charges `?.` and `??` a branch each, which `typescript/prefer-optional-chain` (also on in this config) pushes code toward, so the ceiling stays above what ordinary branching reaches.
 
 Read a hit as a pointer to open the file, not as a number to bring down. The count cannot tell a good extraction from a bad one, and a rewrite that scores lower is not automatically the better one.
 
