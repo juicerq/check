@@ -4,11 +4,10 @@
 	"description": "Lint rules, shared config, and check runner for juicerq's code standard",
 	"author": "juicerq",
 	"license": "MIT",
-	"homepage": "https://github.com/juicerq/crew/tree/main/check",
+	"homepage": "https://github.com/juicerq/check",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/juicerq/crew.git",
-		"directory": "check"
+		"url": "git+https://github.com/juicerq/check.git"
 	},
 	"type": "module",
 	"bin": {

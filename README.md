@@ -67,9 +67,9 @@ Read a hit as a pointer to open the file, not as a number to bring down. The cou
 
 It also turns on three rules from this package:
 
-- **`juicerq/no-conditional-let`** — an empty `let` filled by a following `if`, `switch`, or ternary. [Docs](https://github.com/juicerq/crew/blob/main/check/src/rules/no-conditional-let/docs.md)
-- **`juicerq/no-ternary-return`** — a `return` whose whole argument is a ternary. [Docs](https://github.com/juicerq/crew/blob/main/check/src/rules/no-ternary-return/docs.md)
-- **`juicerq/no-trivial-call-wrapper`** — a function whose body is one call forwarding its own parameters. [Docs](https://github.com/juicerq/crew/blob/main/check/src/rules/no-trivial-call-wrapper/docs.md)
+- **`juicerq/no-conditional-let`** — an empty `let` filled by a following `if`, `switch`, or ternary. [Docs](https://github.com/juicerq/check/blob/main/src/rules/no-conditional-let/docs.md)
+- **`juicerq/no-ternary-return`** — a `return` whose whole argument is a ternary. [Docs](https://github.com/juicerq/check/blob/main/src/rules/no-ternary-return/docs.md)
+- **`juicerq/no-trivial-call-wrapper`** — a function whose body is one call forwarding its own parameters. [Docs](https://github.com/juicerq/check/blob/main/src/rules/no-trivial-call-wrapper/docs.md)
 
 ## Exports
 
